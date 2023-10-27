@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebAuthn Demo Application</title>
+    <link th:href="@{/css/tachyons.css}" rel="stylesheet"/>
+</head>
+<body class="black-80">
+<div th:replace="~{header :: header}">...</div>
+<br>
+<div class="pa4 black-80">
+    <form class="measure center" id="form" action="/api/registration/authenticator" method="POST">
+        <legend class="f2 f1-l fw2 mb0 lh-title">Sign Up</legend>
+        <hr>
+        <div class="mt3">
+            <label class="db fw6 lh-copy" for="username">Username:</label>
+            <input class="pa2 input-reset ba bg-transparent hover-bg-black-10 hover-black w-100" type="text"
+                   name="username" id="username" required>
+        </div>
+        <div class="mt3">
+            <label class="db fw6 lh-copy" for="display">Display Name:</label>
+            <input class="pa2 input-reset ba bg-transparent hover-bg-black-10 hover-black w-100" type="text"
+                   name="display" id="display" required>
+        </div>
+        <div class="mt3">
+            <label class="db fw6 lh-copy" for="credentialName">Credential Name:</label>
+            <input class="pa2 input-reset ba bg-transparent hover-bg-black-10 hover-black w-100" type="text"
+                   name="credentialName" id="credentialName" required>
+        </div>
+        <button class="ba bw1 mt2 no-underline br-pill ph3 pv2 mb2 dib white b--none bg-black-80 hover-bg-black" type="submit">
+            Submit
+        </button>
+    </form>
+    <br>
+    <div id="errors"></div>
+</div>
+</body>
+<script src="javascript/base64js.min.js"></script>
+<script src="javascript/custom.js"></script>
+<script src="javascript/registerauth.js"></script>
+</html>

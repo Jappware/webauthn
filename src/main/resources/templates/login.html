@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebAuthn Demo Application</title>
+    <link th:href="@{/css/tachyons.css}" rel="stylesheet"/>
+</head>
+<body class="black-80">
+<div th:replace="~{header :: header}">...</div>
+<br>
+<div class="db fw6 lh-copy f6 measure center">
+    <form id="form" action="/api/login/finish" method="POST">
+        <legend class="f2 f1-l fw2 mb0 lh-title">Sign In</legend>
+        <hr>
+        <label class="db fw6 lh-copy f6" for="username">Username:</label>
+        <input class="pa2 input-reset ba bg-transparent hover-bg-black-10 hover-black w-100" type="text" id="username"
+               name="username">
+        <input type="hidden" id="credential" name="credential">
+    </form>
+    <button class="ba bw1 mv2 f6 no-underline br-pill ph3 pv2 dib white b--none bg-black-80 hover-bg-black"
+            type="submit"
+            onclick="checkCredentials();">Submit
+    </button>
+    <br>
+    <div id="errors"></div>
+</div>
+</body>
+<script src="javascript/base64js.min.js"></script>
+<script src="javascript/custom.js"></script>
+<script src="javascript/login.js"></script>
+</html>

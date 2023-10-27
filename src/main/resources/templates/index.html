@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebAuthn Demo Application</title>
+    <link th:href="@{/css/tachyons.css}" rel="stylesheet"/>
+</head>
+<body class="black-80">
+<div th:replace="~{header :: header}">...</div>
+<br>
+<div class="measure center">
+    <h1 class="f2 f1-l fw2 mb0 lh-title">WebAuthn Demo</h1>
+    <hr>
+    <div class="mv2">
+        <a class="ba bw1 f6 no-underline br-pill ph3 pv2 mb2 dib white bg-black-80 hover-bg-black" href="/register">Sign Up</a>
+    </div>
+    <div class="mv2">
+        <a class="ba bw1 f6 no-underline br-pill ph3 pv2 mb2 dib white bg-black-80 hover-bg-black" href="/login">Sign
+            In</a>
+    </div>
+</div>
+</body>
+</html>
