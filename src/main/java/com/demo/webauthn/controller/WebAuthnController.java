@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 @RequiredArgsConstructor
-public class AuthController {
+public class WebAuthnController {
 
     @GetMapping("/")
     public String welcome() {

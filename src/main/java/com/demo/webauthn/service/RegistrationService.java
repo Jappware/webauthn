@@ -1,8 +1,8 @@
 package com.demo.webauthn.service;
 
-import com.demo.webauthn.entity.Authenticator;
-import com.demo.webauthn.entity.User;
-import com.demo.webauthn.repository.CredentialRepositoryImpl;
+import com.demo.webauthn.jpa.entity.Authenticator;
+import com.demo.webauthn.jpa.entity.User;
+import com.demo.webauthn.jpa.repository.CredentialRepositoryImpl;
 import com.demo.webauthn.util.Utility;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.yubico.webauthn.FinishRegistrationOptions;

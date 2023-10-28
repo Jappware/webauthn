@@ -1,6 +1,6 @@
 package com.demo.webauthn.config;
 
-import com.demo.webauthn.repository.CredentialRepositoryImpl;
+import com.demo.webauthn.jpa.repository.CredentialRepositoryImpl;
 import com.yubico.webauthn.RelyingParty;
 import com.yubico.webauthn.data.RelyingPartyIdentity;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +13,7 @@ public class RelyingPartyConfig {
     @Bean
     @Autowired
     public RelyingParty relyingParty(CredentialRepositoryImpl credentialRepository,
-                                     WebauthnConfig webAuthnConfig) {
+                                     WebAuthnConfig webAuthnConfig) {
 
         var relyingPartyIdentity = RelyingPartyIdentity.builder()
                                                        .id(webAuthnConfig.getHostname())

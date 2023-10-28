@@ -64,7 +64,7 @@ public class LoginService {
         } catch (IOException | AssertionFailedException e) {
             var errMsg = "Authentication failed: " + e.getMessage();
             log.error(errMsg);
-            throw new RuntimeException(errMsg, e);
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, errMsg);
         }
     }
 }

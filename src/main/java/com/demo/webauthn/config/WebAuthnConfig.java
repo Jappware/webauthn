@@ -11,7 +11,7 @@ import java.util.Set;
 @Getter
 @Setter
 @ConfigurationProperties(prefix = "webauthn")
-public class WebauthnConfig {
+public class WebAuthnConfig {
 
     private String hostname;
 

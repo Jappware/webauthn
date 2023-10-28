@@ -1,7 +1,7 @@
-package com.demo.webauthn.repository;
+package com.demo.webauthn.jpa.repository;
 
-import com.demo.webauthn.entity.Authenticator;
-import com.demo.webauthn.entity.User;
+import com.demo.webauthn.jpa.entity.Authenticator;
+import com.demo.webauthn.jpa.entity.User;
 import com.yubico.webauthn.data.ByteArray;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

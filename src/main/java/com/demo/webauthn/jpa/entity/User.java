@@ -1,4 +1,4 @@
-package com.demo.webauthn.entity;
+package com.demo.webauthn.jpa.entity;
 
 import com.yubico.webauthn.data.ByteArray;
 import com.yubico.webauthn.data.UserIdentity;
