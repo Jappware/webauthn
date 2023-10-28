@@ -39,7 +39,7 @@ To access webauthn database you can install [MySQL Community Server](https://dev
 and configure its connection with username and password defined in application.properties of the project
 (in this scenario we configure it in Intellij Idea IDE):
 
-![Screenshot 2023-10-27 at 16.10.57.png](..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fyf%2Fnxfzt3_14kg4hvqc25m191_40000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_b0fuDb%2FScreenshot%202023-10-27%20at%2016.10.57.png)
+<img width="1116" alt="Screenshot 2023-10-28 at 18 34 42" src="https://github.com/Jappware/webauthn/assets/71008388/994864a0-e0c2-458c-89e7-5a0b17f30b5d">
 
 After configuring DB start the application using your IDE or run:
 
