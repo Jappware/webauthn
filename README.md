@@ -1,4 +1,4 @@
-# Webauthn Demo Application
+# WebAuthn Demo Application
 
 A POC project to demonstrate how passwordless authentication works
 
