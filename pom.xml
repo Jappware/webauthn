@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.bench</groupId>
     <artifactId>webauthn</artifactId>
-    <name>Webauthn</name>
+    <name>WebAuthn</name>
     <description>Passwordless Web Authentication</description>
     <properties>
         <maven.compiler.release>21</maven.compiler.release>

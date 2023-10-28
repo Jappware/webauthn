@@ -62,8 +62,9 @@ public class LoginService {
                 return "index";
             }
         } catch (IOException | AssertionFailedException e) {
-            log.error("Authentication failed", e);
-            throw new RuntimeException("Authentication failed", e);
+            var errMsg = "Authentication failed: " + e.getMessage();
+            log.error(errMsg);
+            throw new RuntimeException(errMsg, e);
         }
     }
 }

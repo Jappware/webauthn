@@ -14,15 +14,16 @@
         <hr>
         <label class="db fw6 lh-copy f6" for="username">Username:</label>
         <input class="pa2 input-reset ba bg-transparent hover-bg-black-10 hover-black w-100" type="text" id="username"
-               name="username">
+               name="username" onblur="this.value=removeSpaces(this.value);" required>
         <input type="hidden" id="credential" name="credential">
+        <button class="ba bw1 mv2 f6 no-underline br-pill ph3 pv2 dib white b--none bg-black-80 hover-bg-black"
+                type="submit">Submit
+        </button>
+        <br>
+        <div class="red">
+            <p id="errors"></p>
+        </div>
     </form>
-    <button class="ba bw1 mv2 f6 no-underline br-pill ph3 pv2 dib white b--none bg-black-80 hover-bg-black"
-            type="submit"
-            onclick="checkCredentials();">Submit
-    </button>
-    <br>
-    <div id="errors"></div>
 </div>
 </body>
 <script src="javascript/base64js.min.js"></script>

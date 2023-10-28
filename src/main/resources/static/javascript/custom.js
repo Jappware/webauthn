@@ -48,3 +48,7 @@ function displayError(error) {
     errorElem.innerHTML = error;
     console.error(error);
 }
+
+function removeSpaces(value) {
+    return value.split(' ').join('');
+}

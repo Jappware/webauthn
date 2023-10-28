@@ -15,24 +15,26 @@
         <div class="mt3">
             <label class="db fw6 lh-copy" for="username">Username:</label>
             <input class="pa2 input-reset ba bg-transparent hover-bg-black-10 hover-black w-100" type="text"
-                   name="username" id="username" required>
+                   name="username" id="username" onblur="this.value=removeSpaces(this.value);" required>
         </div>
         <div class="mt3">
             <label class="db fw6 lh-copy" for="display">Display Name:</label>
             <input class="pa2 input-reset ba bg-transparent hover-bg-black-10 hover-black w-100" type="text"
-                   name="display" id="display" required>
+                   name="display" id="display" onblur="this.value=removeSpaces(this.value);" required>
         </div>
         <div class="mt3">
             <label class="db fw6 lh-copy" for="credentialName">Credential Name:</label>
             <input class="pa2 input-reset ba bg-transparent hover-bg-black-10 hover-black w-100" type="text"
-                   name="credentialName" id="credentialName" required>
+                   name="credentialName" id="credentialName" onblur="this.value=removeSpaces(this.value);" required>
         </div>
         <button class="ba bw1 mt2 no-underline br-pill ph3 pv2 mb2 dib white b--none bg-black-80 hover-bg-black" type="submit">
             Submit
         </button>
+        <br>
+        <div class="red">
+            <p id="errors"></p>
+        </div>
     </form>
-    <br>
-    <div id="errors"></div>
 </div>
 </body>
 <script src="javascript/base64js.min.js"></script>
