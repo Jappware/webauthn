@@ -16,7 +16,7 @@ visit [Thymeleaf website](https://www.thymeleaf.org/);
 **Project Lombok**: This project uses Lombok tools to simplify boilerplate code for defining Java objects.
 For more info, visit [Project Lombok website](https://projectlombok.org/);
 
-**MySQL**: This project uses relational MySQL database version 8.1.0 to manage required entities in tables.
+**MySQL**: This project uses relational MySQL database connector version 8.2.0 to manage required entities in tables.
 You can install it on the [MySQL website](https://www.mysql.com/);
 
 **Yubico Webauthn**: This project uses Yubico Webauthn library which is an API that simplifies integration with strong
