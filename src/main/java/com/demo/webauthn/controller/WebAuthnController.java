@@ -9,17 +9,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class WebAuthnController {
 
     @GetMapping("/")
-    public String welcome() {
+    public String index() {
         return "index";
     }
 
     @GetMapping("/login")
-    public String loginPage() {
+    public String login() {
         return "login";
     }
 
     @GetMapping("/register")
-    public String registerUser() {
+    public String register() {
         return "register";
     }
 }
