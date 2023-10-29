@@ -19,7 +19,7 @@ class WebAuthServerError extends Error {
 }
 
 function throwError(response) {
-    throw new WebAuthServerError("Error from client", response.body);
+    throw new WebAuthServerError('Error from client', 'Status - ' + response.status);
 }
 
 function checkStatus(response) {
