@@ -50,5 +50,9 @@ function displayError(error) {
 }
 
 function removeSpaces(value) {
-    return value.split(' ').join('');
+    return containsOnlySpaces(value) ? value.split(' ').join('') : value;
+}
+
+function containsOnlySpaces(str) {
+    return str.match(/^\s*$/) !== null;
 }
