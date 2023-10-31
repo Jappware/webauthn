@@ -19,6 +19,7 @@ public class RegistrationController {
     private final RegistrationService registrationService;
 
     @PostMapping
+    @ResponseBody
     public String registerUser(@RequestParam String username, @RequestParam String display, HttpSession session) {
 
         return registrationService.registerUser(username, display, session);
